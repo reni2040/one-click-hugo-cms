@@ -44,3 +44,21 @@ All SVG icons stored in `site/static/img/icons` are automatically optimized with
   <use xlink:href="#SVG-ID"></use>
 </svg>
 ```
+
+## Apartment Management System (PHP MVC)
+
+This repository now includes a lightweight PHP 8+ MVC implementation for a multi-role apartment society management system designed for Indian residential communities.
+
+### Features
+- Web-based installer with requirement checks, database configuration, society setup, and admin creation.
+- Role-based authentication (admin, executive, owner) with CSRF-protected login.
+- Monthly billing scaffolding with invoice storage and Razorpay-ready payment service.
+- Ticketing, notices, polls, and notification scaffolding with multi-society awareness.
+
+### Quick start
+1. Upload the `public`, `app`, `config`, and `database` folders to your PHP 8+ hosting. Point the web root to `public/`.
+2. Ensure `config/` is writable during installation.
+3. Visit `/install.php` in your browser and complete the guided steps.
+4. After installation, remove `public/install.php` for security.
+
+Configuration is saved to `config/config.php` (a template is provided at `config/config.sample.php`). Database schema is defined in `database/migrations.sql`.
